@@ -1,68 +1,60 @@
-server creation -nodejs + Express
+Server Creation - Nodejs + Expree
+
 
 Basic commands
---------------
+---------------------
 
-1)Creating package.json -npm init
-2)Creating node modules -npm i express (insatall express)
-3)install nodemon -npm install -g nodemon
-4)run - nodemon index.js
-5)Install Mongose-npm i mongoose
+1) Creating package.json - npm init
+2)Creating node modules - npm i express (to install express )
+3)Install nodemon - npm install nodemon
+4)Run -nodemon.index.js
 
+ Basic steps
+ --------------
 
-Basic steps
-------------
+ 1) Creating a folder
+ 2) Create package.json file
+ 3) Install express
+ 4) Import express inside the index.js file
+ 5) Create an app using express
+ 6) set up ort number
+ 7) resolve HTTP request
 
-1)Creating a folder (Bankserver)
-2)Creatin package.json file
-3)install express
-4)import express inside the index.js file
-5)Create an app using express
-6)Setip the port number
-7)resolving htp request 
+8) HTTP Response code
+  1xx - Information
+  2xx - Successful
+  3xx - Redirection
+  4xx - client error
+  5xx - Server error
 
-8)HTTP Response code
-    1xx-information
-    2xx-succesfull
-    3xx-redirection
-    4xx-client error
-    5xx-server error
-
-9)JWT Token
-install JWT token -npm i jsonwebtoken
-To generate token -sign()
-
+9) JWT token
+  Install JWT token - npm i jsonwebtoken
+  To generate token - sign()
 
 10) Middleware
-It comes in the middleware of the request and the response cycle of the nodejs execution process
+   It comes in the midde of the request and response cycle of nodejs execution process
+    req,res,next
 
-        req,res,next
+    i) Application specific middleware - for entire application
+    ii) ROuter specific middleware - for token verification - verify()
 
-        1)applicaion specific middleware  -For entire application
-        2)router specific middleware  -FOr token verificatoin-verify()
-        
+11) Database Integration
+   i) install mongoose - npm i mongoose
 
-12)Database integration
-    1)Install Mongose-npm i mongoose
+13)Asynchronous function resolving - promise
+  i)Resolve state - .then()
+  ii)Reject state - catch()
 
-13)Asynchrouns function resolving-promise
+14)CORS - Cross Origin Resource Sharing
+   install cors - npm i cors
 
- 1)Resolve State- .then()
- 2)Reject state-catch()
+   port 4200 (angular) --------requests----------------> 3000(node)(receives)
+   
+15)Asynchronous call - RxJs - (Reactive Extention for JavaScript)
 
-14)CROS -cross origin resourse sharing 
+   JS - promise
+   TypeScript - RxJs(it's a library)
 
-    install cors -nom i cors
-
-    port 4200 (angular) -----request---->3000(node)(reactive)
-
-
-
-15)Asynchrounts call -RxJs-(reactive extension for javascript)
-
-js-promise
-ts-RxJs(library)
-
- 1)Observable
-     a)resolved -Subscribe()
-     b)reject-catch()
+     1)Obsrvable
+         a)resolved - subscribe()
+         b)reject - catch()
